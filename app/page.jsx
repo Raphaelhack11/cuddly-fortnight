@@ -9,7 +9,7 @@ import PurchaseModal from '../components/PurchaseModal';
 // --- Import images from your images/ folder ---
 import volvo from '../../images/volvo-vnl-670.jpeg';
 import freight2012 from '../../images/freightliner-cascadia-2012.jpeg';
-import freight2021 from '../../images/freightliner-cascadia-2021.jpeg';
+import freight2021 from '../../images/freightliner-cascadia-2021.webp';
 import international from '../../images/international-lt.jpeg';
 import ken680_2019 from '../../images/kenworth-t680-2019.jpeg';
 import ken680_2021 from '../../images/kenworth-t680-2021.jpeg';
