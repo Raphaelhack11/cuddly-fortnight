@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphic styles */
+html.dark {
+  --glass-bg: rgba(255,255,255,0.05);
+  --glass-border: rgba(255,255,255,0.2);
+}
+
+html.light {
+  --glass-bg: rgba(0,0,0,0.05);
+  --glass-border: rgba(0,0,0,0.15);
+}
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
