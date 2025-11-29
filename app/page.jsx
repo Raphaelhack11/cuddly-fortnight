@@ -6,14 +6,27 @@ import TruckCard from '../components/TruckCard';
 import TruckDetails from '../components/TruckDetails';
 import PurchaseModal from '../components/PurchaseModal';
 
-import volvo from '../../images/volvo.jpg';
-import scania from '../../images/scania.jpg';
-import man from '../../images/man.jpg';
+// --- Import images from your images/ folder ---
+import volvo from '../../images/volvo-vnl-670.jpeg';
+import freight2012 from '../../images/freightliner-cascadia-2012.jpeg';
+import freight2021 from '../../images/freightliner-cascadia-2021.jpeg';
+import international from '../../images/international-lt.jpeg';
+import ken680_2019 from '../../images/kenworth-t680-2019.jpeg';
+import ken680_2021 from '../../images/kenworth-t680-2021.jpeg';
+import mack from '../../images/mack-anthem-2021.jpeg';
+import peter389 from '../../images/peterbilt-389.jpeg';
+import peter579 from '../../images/peterbilt-579-2021.jpeg';
 
 const TRUCKS = [
-  { id: 1, name: 'Volvo FH16', price: 90000, image: volvo, description: 'Powerful 16L engine, 2022 model, full sleeper cab.' },
-  { id: 2, name: 'Scania XT', price: 110000, image: scania, description: 'Heavy-duty 12L engine, 2021 model, rugged design.' },
-  { id: 3, name: 'MAN TGX', price: 105000, image: man, description: 'Efficient 15L engine, 2020 model, comfortable interior.' }
+  { id: 1, name: 'Volvo VNL 670', price: 90000, image: volvo, description: 'Powerful 13L engine, 2022 model, full sleeper cab.' },
+  { id: 2, name: 'Freightliner Cascadia 2012', price: 75000, image: freight2012, description: 'Reliable 12L engine, durable design.' },
+  { id: 3, name: 'Freightliner Cascadia 2021', price: 110000, image: freight2021, description: 'Heavy-duty 12L engine, rugged design.' },
+  { id: 4, name: 'International LT', price: 95000, image: international, description: 'Comfortable sleeper cab, fuel-efficient engine.' },
+  { id: 5, name: 'Kenworth T680 2019', price: 88000, image: ken680_2019, description: 'Strong 15L engine, ergonomic cabin.' },
+  { id: 6, name: 'Kenworth T680 2021', price: 105000, image: ken680_2021, description: 'Modern design, high efficiency, premium features.' },
+  { id: 7, name: 'Mack Anthem 2021', price: 115000, image: mack, description: 'Powerful 14L engine, luxury sleeper cab.' },
+  { id: 8, name: 'Peterbilt 389', price: 98000, image: peter389, description: 'Classic design, reliable engine, great for long hauls.' },
+  { id: 9, name: 'Peterbilt 579 2021', price: 120000, image: peter579, description: 'Sleek aerodynamic design, high performance.' }
 ];
 
 export default function Page() {
@@ -45,4 +58,4 @@ export default function Page() {
       {details && <TruckDetails truck={details} onClose={() => setDetails(null)} />}
     </div>
   );
-  }
+            }
